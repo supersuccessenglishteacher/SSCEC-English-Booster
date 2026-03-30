@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC - English Learning Dashboard</title>
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #3b82f6;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+            color: #1e293b;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 { margin: 0; font-size: 28px; }
+        .hero p { opacity: 0.9; margin-top: 10px; font-size: 18px; }
+
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 40px;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card h3 { color: var(--primary); margin-top: 0; }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-study { background: var(--secondary); color: white; }
+        .btn-quiz { background: var(--accent); color: white; }
+        .btn-dashboard { background: #7c3aed; color: white; border: none; font-size: 16px; }
+        .btn-pdf { background: #64748b; color: white; font-size: 14px; width: 100%; box-sizing: border-box; }
+
+        .section-title {
+            margin: 40px 0 20px;
+            text-align: center;
+            font-size: 22px;
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .pdf-section {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .pdf-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .badge {
+            background: #dcfce7;
+            color: #166534;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Dashboard Section Highlight */
+        .dashboard-box {
+            background: #f5f3ff;
+            border: 2px solid #7c3aed;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Super Success Computer Education Center</h1>
+    <p>🚀 Tense-Free English Learning Method (CFN)</p>
+</div>
+
+<div class="container">
+    <div style="text-align: center;">
+        <h2 class="section-title">আমাদের ডিজিটাল লেসনসমূহ</h2>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <span class="badge">CFN 1</span>
+            <h3>বর্তমানে যা করছি</h3>
+            <p>am / is / are + V4 (ing)</p>
+            <a href="CFN1_Confidence_Booster.html" class="btn btn-study">পড়া শুরু করো</a>
+        </div>
+
+        <div class="card">
+            <span class="badge">CFN 2</span>
+            <h3>পরে করব ভাবছি</h3>
+            <p>shall / will + V1</p>
+            <a href="CFN2_Future_Action.html" class="btn btn-study">পড়া শুরু করো</a>
+        </div>
+
+        <div class="card">
+            <span class="badge">CFN 3</span>
+            <h3>এইমাত্র শেষ করলাম</h3>
+            <p>have / has + V3</p>
+            <a href="CFN3_Just_Finished.html" class="btn btn-study">পড়া শুরু করো</a>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px;">
+        <div class="card dashboard-box">
+            <h2 style="color: #7c3aed;">📢 ১৫ মিনিটের স্পিকিং প্র্যাকটিস</h2>
+            <p>CFN 1, 2 এবং 3 মিলিয়ে দ্রুত ইংরেজি বলার অভ্যাস করো।</p>
+            <a href="dashboard.html" class="btn btn-dashboard" style="padding: 15px 40px;">ওপেন ড্যাশবোর্ড ⚡</a>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px;">
+        <div class="card" style="border: 2px solid var(--accent); background: #fffbeb;">
+            <h2>🎯 কনফিডেন্স যাচাই করো (Mega Quiz)</h2>
+            <p>১২টি মজাদার প্রশ্নের উত্তর দাও এবং স্যারকে রেজাল্ট পাঠাও।</p>
+            <a href="CFN_Super_Quiz.html" class="btn btn-quiz" style="padding: 15px 40px; font-size: 18px;">কুইজ শুরু করো 🚀</a>
+        </div>
+    </div>
+
+    <div class="pdf-section">
+        <h3>📚 স্টাডি ম্যাটেরিয়াল ডাউনলোড (PDF)</h3>
+        <p>অফলাইনে পড়ার জন্য নিচের পিডিএফগুলো ডাউনলোড করো:</p>
+        <div class="pdf-grid">
+            <a href="cfn1_lesson.pdf" class="btn btn-pdf" download>📥 CFN 1 PDF</a>
+            <a href="cfn2_lesson.pdf" class="btn btn-pdf" download>📥 CFN 2 PDF</a>
+            <a href="cfn3_lesson.pdf" class="btn btn-pdf" download>📥 CFN 3 PDF</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Bipul Sarkar | Super Success Computer Education Center</p>
+    <p>Contact: 8017247298 | Nimta, Kolkata</p>
+</footer>
+
+</body>
+</html>
