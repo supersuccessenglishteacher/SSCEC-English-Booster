@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFN 1 - Confidence Booster</title>
+    <style>
+        :root {
+            --primary: #059669; /* Green for CFN 1 */
+            --secondary: #ecfdf5;
+            --accent: #fbbf24;
+            --text: #064e3b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0fdf4;
+            margin: 0;
+            padding: 20px;
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px solid var(--primary);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        h1 { margin: 0; font-size: 28px; }
+        .subtitle { font-size: 18px; opacity: 0.9; margin-top: 5px; }
+
+        .rule-box {
+            background: var(--secondary);
+            border-left: 6px solid var(--primary);
+            padding: 15px;
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+
+        th, td {
+            border: 2px solid #d1fae5;
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        th { background: var(--primary); color: white; }
+
+        .friend-verb {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .friend-card {
+            background: white;
+            border: 2px dashed var(--primary);
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .friend-card b { color: #d97706; font-size: 20px; }
+
+        .magic-note {
+            background: #fff7ed;
+            border: 2px solid var(--accent);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .high-five {
+            text-align: center;
+            font-size: 50px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-top: 20px;
+        }
+
+        .high-five:hover { transform: scale(1.2); }
+
+        @media (max-width: 600px) {
+            td, th { font-size: 14px; padding: 8px; }
+            .friend-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🚀 CFN 1: বর্তমানে যা করছি (Action Right Now)</h1>
+        <p class="subtitle">Tense-free English Learning Method</p>
+    </header>
+
+    <div class="rule-box">
+        <strong>💡 সূত্র:</strong> Subject + Helping Verb (am/is/are) + Main Verb (ing)<br>
+        <em>মনে রাখবে: V4 মানে হলো V1 + ing (কাজের সাথে ing যোগ)</em>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Subject (কে)</th>
+                <th>Helping Verb (বন্ধু)</th>
+                <th>V4 (কাজ + ing)</th>
+                <th>Full Sentence (পুরো বাক্য)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>I</b></td>
+                <td>am</td>
+                <td>doing / eating</td>
+                <td>I am doing. (আমি করছি)</td>
+            </tr>
+            <tr>
+                <td><b>He / She / Ram</b></td>
+                <td>is</td>
+                <td>reading / writing</td>
+                <td>He is reading. (সে পড়ছে)</td>
+            </tr>
+            <tr>
+                <td><b>You / We / They</b></td>
+                <td>are</td>
+                <td>learning / fixing</td>
+                <td>You are learning. (তুমি শিখছো)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>🤝 বন্ধু Verb (Helping Verb) চেনার সহজ উপায়:</h3>
+    <div class="friend-verb">
+        <div class="friend-card"><b>I</b> এর একমাত্র বন্ধু <br><b>am</b></div>
+        <div class="friend-card"><b>একজন</b> বোঝালে বন্ধু <br><b>is</b></div>
+        <div class="friend-card"><b>অনেকজন ও You</b> এর বন্ধু <br><b>are</b></div>
+    </div>
+
+    <div class="magic-note">
+        ✨ Confidence Booster: "ing" দেখলেই বুঝবে কাজটা এখন চলছে! ✨
+    </div>
+
+    <div class="high-five" onclick="celebrate()">✋</div>
+    <p style="text-align:center; font-weight:bold; color:var(--primary);">High-Five Finish! (Click the hand)</p>
+
+    <p style="text-align:center; font-size: 12px; color: #666; margin-top: 30px;">
+        Created for Super Success Computer Education Center | By Bipul Sarkar
+    </p>
+</div>
+
+<script>
+    function celebrate() {
+        alert('অসাধারণ! তুমি CFN 1-এর ম্যাজিক শিখে গেছো। এখন থেকে "ing" দেখলেই বুঝবে কাজটা চলছে! ✋✨');
+    }
+</script>
+
+</body>
+</html>
